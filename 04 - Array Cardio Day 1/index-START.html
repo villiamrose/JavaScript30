@@ -53,6 +53,11 @@
 
     // Array.prototype.sort()
     // 3. Sort the inventors by birthdate, oldest to youngest
+    let sortedInventors = inventors.sort((inventorA, inventorB) => {
+      return inventorA.year - inventorB.year;
+    });
+
+    console.table(sortedInventors);
 
     // Array.prototype.reduce()
     // 4. How many years did all the inventors live all together?
